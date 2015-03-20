@@ -4,7 +4,7 @@
   "description": "Simple NodeWebkit based browser",
   "main": "index.html",
   "window": {
-    "toolbar": true,
+    "toolbar": false,
     "width": 1280,
     "height": 700
   },
