@@ -44,6 +44,7 @@
                     }
                     if (run) {
                         shortcut.handler();
+                        keys[shortcut.key] = false;
                         for (var j = 0; j < shortcut.requires.length; j++) {
                             var requireKey = shortcut.requires[j];
                             keys[requireKey] = false;
