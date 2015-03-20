@@ -1,0 +1,47 @@
+.top-bar {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    height: 100px;
+}
+
+.top-bar .pixel-form {
+    position: relative;
+    height: 50px;
+}
+
+.top-bar .pixel-form label {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 30px;
+}
+
+.top-bar .pixel-form .url-bar-container {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    right: 25px;
+}
+
+.top-bar .pixel-form .url-bar-container input {
+    width: 100%;
+}
+
+.page-panel {
+    position: absolute;
+    top: 115px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+.page-panel iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}

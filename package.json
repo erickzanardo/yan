@@ -1,0 +1,17 @@
+{
+  "name": "yan",
+  "version": "1.0.0",
+  "description": "Simple NodeWebkit based browser",
+  "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "width": 1280,
+    "height": 700
+  },
+  "keywords": [
+    "browser",
+    "nodewebkit"
+  ],
+  "author": "Erick Zanardo",
+  "license": "MIT"
+}
