@@ -84,4 +84,8 @@
     registerShortcut([codes.CONTROL, codes.LEFT], function() {
         $('.tab-panel .pixel-button-primary').prev('.tab-button').click();
     });
+
+    registerShortcut([codes.CONTROL, codes.L], function() {
+        $('#url-bar').focus();
+    });
 })(jQuery);
