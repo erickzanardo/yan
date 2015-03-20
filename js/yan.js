@@ -35,6 +35,10 @@
         $('#url-bar').keyup(function(e) {
            var which = e.which;
            var me = $(this);
+            var url = me.val();
+            if (url.indexOf('http') !== 0) {
+                url = 'http://' + url;
+            }
            // ENTER
            if (which == 13) {
                 // Creates the tab button
@@ -44,7 +48,6 @@
                 var tab = $('<button class="pixel-button pixel-button-primary tab-button">Loading</button>');
                 var selectedTab = tabPanel.find('.pixel-button-primary');
 
-                var url = me.val();
                 var iframe;
                 if (!selectedTab.length) {
                     selectedTab.removeClass('pixel-button-primary');
@@ -52,9 +55,6 @@
     
                     // Creates the iframe
                     pagePanel.find('iframe:visible').hide();
-                    if (url.indexOf('http') !== 0) {
-                        url = 'http://' + url;
-                    }
 
                     iframe = $('<iframe nwdisable nwfaketop></iframe>');
                     pagePanel.append(iframe);
