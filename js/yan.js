@@ -1,5 +1,9 @@
 (function($) {
     $(document).ready(function() {
+        var gui = require('nw.gui');
+        var nwin = gui.Window.get();
+        nwin.maximize();
+
         $('#url-bar').focus();
 
         $('.tab-panel').on('click', '.tab-button', function() {
